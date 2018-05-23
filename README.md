@@ -4,11 +4,15 @@
 2. clone this repo: 
 3. Build the docker image from the Dockerfile (in current directory)
 
-    docker build -t run_rdkit_conda .
+```bash
+ docker build -t run_rdkit_conda .
+```
 
 4. Run the docker container:
-    
+
+```bash
     docker run -d -p 8888:8888 -t run_rdkit_conda /bin/bash -c "jupyter notebook --notebook-dir=/tmp --ip=* --allow-root"
+```
 
 5. Docker will return a container ID, type `docker log <id>`. Note: you do not have to type the entire ID, just the first three letters/numbers
 
