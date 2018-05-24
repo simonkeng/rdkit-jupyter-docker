@@ -1,6 +1,6 @@
 # RDKit + Chem + Conda + Jupyter + Docker
 
-Easily run a Jupyter notebook in Python 3, with all the RDKit dependencies and packages baked in. I hope this provides an "out of the box" solution for anyone who would like to replicate  [this](http://asteeves.github.io/blog/2015/01/12/molecules-in-rdkit/) or [this](https://github.com/rdkit/UGM_2016/blob/master/Notebooks/Brief%20Introduction.ipynb), but does not want to spend hours installing packages, dealing with virtualenvs, conda envs, dependencies, and getting all the right pieces talking for RDKit and Jupyter to live happily together (in my experience, this is _not_ trivial).
+Easily run a Jupyter notebook in Python 3, with all the RDKit dependencies and packages baked in. I hope this provides an "out of the box" solution for anyone who would like to replicate  [this](http://asteeves.github.io/blog/2015/01/12/molecules-in-rdkit/) or [this](https://github.com/rdkit/UGM_2016/blob/master/Notebooks/Brief%20Introduction.ipynb), but does not want to spend hours installing packages, dealing with virtualenvs, conda envs, dependencies, and getting all the right pieces talking for RDKit and Jupyter to live happily together (from my experience, this was _not_ trivial). 
 
 1. Install [Docker](https://www.docker.com/community-edition).
 2. Clone this repo: `git clone https://github.com/simonkeng/rdkit-jupyter-docker.git`
