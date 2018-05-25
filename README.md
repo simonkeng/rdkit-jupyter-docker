@@ -7,13 +7,13 @@ Easily run a Jupyter notebook in Python 3, with all the RDKit dependencies and p
 3. Build docker image from Dockerfile
 
 ```bash
- docker build -t run_rdkit_conda .
+docker build -t run_rdkit_conda .
 ```
 
 4. Run the docker container:
 
 ```bash
-    docker run -d -p 8888:8888 -t run_rdkit_conda /bin/bash -c "jupyter notebook --notebook-dir=/tmp --ip=* --allow-root"
+docker run -d -p 8888:8888 -t run_rdkit_conda /bin/bash -c "jupyter notebook --notebook-dir=/tmp --ip=* --allow-root"
 ```
 
 5. Docker will return a container ID, type `docker logs <id>` passing in the first three characters from the id.
