@@ -10,5 +10,6 @@ RUN conda config --add channels  https://conda.anaconda.org/rdkit
 RUN conda install -y nomkl rdkit pandas cairo jupyter
 
 RUN apt-get update && apt-get install -y libxrender-dev
+RUN mkdir /my_data
 
 EXPOSE 8888
