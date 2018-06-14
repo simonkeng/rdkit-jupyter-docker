@@ -36,6 +36,19 @@ http://127.0.0.1:8888/?token=6ae1624a03f82e5592feaa5123b4086a5dc4f54ed6f6fe8b
 
 ..but with your token instead of mine. _Note:_ this is currently a **Jupyter bug**, its very likely that this step won't be necessary by the time you run this container.
 
+### Once you're in:
+
+These lines are useful for getting started with RDKit in Jupyter. 
+
+```python
+import rdkit
+from rdkit import Chem
+from rdkit.Chem import AllChem
+from rdkit.Chem import Draw
+from rdkit.Chem.Draw import IPythonConsole
+from IPython.display import Image
+```
+
 ### Caveats
 If you are running any other processes on port 8888 (e.g. another Jupyter notebook) then you will likely have problems connecting to the containerized notebook in the browser. I recommend shutting down any other Jupyter notebooks first, before running `docker run`.
 
