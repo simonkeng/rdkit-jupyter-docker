@@ -13,3 +13,5 @@ RUN apt-get update && apt-get install -y libxrender-dev
 RUN mkdir /my_data
 
 EXPOSE 8888
+
+CMD jupyter notebook --notebook-dir=/tmp --ip=* --allow-root
