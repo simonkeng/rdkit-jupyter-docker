@@ -55,3 +55,28 @@ If you are running any other processes on port 8888 (e.g. another Jupyter notebo
 ## Acknowledgement
 
 This implementation was forked from Greg Landrum's [rdkit containers](https://github.com/rdkit/rdkit_containers/tree/master/docker/run_conda3) repo, but I've tweaked it a bit and updated the things that didn't work for me initially, in hopes to provide an "out of the box" build, relevant to May 2018 developers. All credit goes to Greg and the other RDKit devs.
+
+
+Docker Compose
+===
+
+Once steps 1 and 2 of the [Instuctions](#instructions) sections have been
+completed you can use docker-compose to complete steps 3-7:
+
+Step 3:
+
+```bash
+docker-compose --build
+```
+
+Step 4-7:
+```bash
+# start container with logs output to terminal
+docker-compose up
+
+# or start container in background
+docker-compose up -d
+
+# output the container logs
+docker-compose logs -f
+```
