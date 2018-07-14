@@ -28,13 +28,13 @@ docker run -d -p 8888:8888 -t run_rdkit_conda /bin/bash -c "jupyter notebook --n
 http://11140d529dec:8888/?token=6ae1624a03f82e5592feaa5123b4086a5dc4f54ed6f6fe8b
 ```
 
-Then replace the part right after `http://` (in this example: `11140d529dec`), with `127.0.0.1`. The final URL should look like
+Then replace right after `http://` (in this example: `11140d529dec`), with `127.0.0.1`. The final URL should look like
 
 ```
 http://127.0.0.1:8888/?token=6ae1624a03f82e5592feaa5123b4086a5dc4f54ed6f6fe8b
 ```
 
-..but with your token instead of mine. _Note:_ this is currently a **Jupyter bug**, its very likely that this step won't be necessary by the time you run this container.
+..but with your token instead of mine. **Note** This is a Jupyter bug right now, so its very likely that this step won't be necessary by the time you run the container.
 
 ### Once you're in:
 
